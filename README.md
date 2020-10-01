@@ -26,6 +26,6 @@ npm run serve
 
 ### Acknowledgements
 
-Thank's to The Net Ninja.
+Thank's to The Net Ninja.  
 Course: Build Web Apps with Vue JS 2 & Firebase
 `https://www.udemy.com/course/build-web-apps-with-vuejs-firebase/`
