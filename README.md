@@ -24,6 +24,8 @@ npm install
 npm run serve
 ```
 
-### Customize configuration
+### Acknowledgements
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Thank's to The Net Ninja.
+Course: Build Web Apps with Vue JS 2 & Firebase
+`https://www.udemy.com/course/build-web-apps-with-vuejs-firebase/`
