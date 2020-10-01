@@ -1,14 +1,14 @@
 # Super-smoothies Vue-app
 
-## Description
+### Description
 
 Small vue app with login and CRUD with Firebase as backend.
 
-## Prerequisites
+### Prerequisites
 
 NodeJS
 
-## Installation
+### Installation
 
 To clone
 
