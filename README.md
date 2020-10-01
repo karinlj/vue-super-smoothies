@@ -24,6 +24,16 @@ npm install
 npm run serve
 ```
 
+## Built With
+
+- vue.js
+- CSS
+- Materialize.css
+
+## Author
+
+- **Karin Ljunggren** - [karinlj](https://github.com/karinlj)
+
 ### Acknowledgements
 
 Thank's to The Net Ninja.  
