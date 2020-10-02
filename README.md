@@ -1,14 +1,19 @@
 # Super-smoothies Vue-app
 
-### Description
+## Description
 
-Small vue app with login and CRUD with Firebase as backend.
+Application for exploring Vue.js with login, CRUD and Firebase as backend.  
 
-### Prerequisites
+![Screenshot](/src/assets/screenshot.jpg?raw=true "Screenshot")
+
+##### Deployed at: 
+http://smoothies.boozang.com/
+
+## Prerequisites
 
 NodeJS
 
-### Installation
+## Installation
 
 To clone
 
@@ -17,24 +22,26 @@ To clone
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
-
+## Compiles and hot-reloads for development
 ```
 npm run serve
 ```
+### To build
+```  
+npm run build  
+```
+Then use the dist folder you get.
 
-### Built With
-
+## Built With
 - vue.js
 - CSS
 - Materialize.css
 
-### Author
+## Author
 
 - **Karin Ljunggren** - [karinlj](https://github.com/karinlj)
 
-### Acknowledgements
+## Acknowledgements
 
 Thank's to The Net Ninja.  
 Course: Build Web Apps with Vue JS 2 & Firebase  
