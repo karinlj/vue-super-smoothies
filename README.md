@@ -26,7 +26,7 @@ npm install
 ```
 npm run serve
 ```
-### To build
+## To build
 ```  
 npm run build  
 ```
