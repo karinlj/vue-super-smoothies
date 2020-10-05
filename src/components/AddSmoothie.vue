@@ -5,7 +5,7 @@
       class="card-panel"
       onkeydown="return event.key != 'Enter';"
     >
-      <h2 class="center-align cyan-text">Add New Smoothie Recipe</h2>
+      <h2 class="center-align blue-text">Add New Smoothie Recipe</h2>
 
       <div class="field title">
         <label for="title">Smoothie Title</label>
@@ -31,7 +31,7 @@
       <div class="field center-align">
         <p class="red-text" v-if="feedback">{{ feedback }}</p>
         <button type="button" class="btn grey" @click="cancel">Cancel</button>
-        <button type="submit" class="btn cyan">Add smoothie</button>
+        <button type="submit" class="btn blue">Add smoothie</button>
       </div>
     </form>
   </div>

@@ -6,7 +6,7 @@
       class="card-panel"
       onkeydown="return event.key != 'Enter;"
     >
-      <h2 class="center-align cyan-text">
+      <h2 class="center-align blue-text">
         Edit {{ smoothie.title }}
         <!-- Edit a smoothie: {{ this.$route.params.smoothie_slug }} -->
       </h2>
@@ -42,7 +42,7 @@
       <div class="field center-align">
         <p class="red-text" v-if="feedback">{{ feedback }}</p>
         <button type="button" class="btn grey" @click="cancel">Cancel</button>
-        <button class="btn cyan">Update smoothie</button>
+        <button class="btn blue">Update smoothie</button>
       </div>
     </form>
   </div>

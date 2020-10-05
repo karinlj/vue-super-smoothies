@@ -2,16 +2,16 @@
   <div class="view-profile container">
     <!-- <div class="card" v-if="profile"> -->
     <div class="card" v-if="profile">
-      <h2 class="cyan-text center">{{ profile.alias }} 's profile</h2>
+      <h2 class="blue-text center">{{ profile.alias }} 's profile</h2>
       <ul>
         <li>
           <div class="black-text">
-            <span class="cyan-text">Alias: </span>{{ profile.alias }}
+            <span class="blue-text">Alias: </span>{{ profile.alias }}
           </div>
         </li>
         <li>
           <div class="black-text">
-            <span class="cyan-text">Email: </span>{{ authUser.email }}
+            <span class="blue-text">Email: </span>{{ authUser.email }}
           </div>
         </li>
       </ul>

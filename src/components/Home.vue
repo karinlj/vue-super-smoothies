@@ -2,7 +2,7 @@
   <div class="home_edit container">
     <div class="card" v-for="smoothie in smoothies" :key="smoothie.id">
       <div class="card-content">
-        <h2 class="cyan-text">{{ smoothie.title }}</h2>
+        <h2 class="blue-text">{{ smoothie.title }}</h2>
         <ul class="ingredients">
           <li v-for="(ing, index) in smoothie.ingredients" :key="index">
             <span class="chip">{{ ing }}</span>

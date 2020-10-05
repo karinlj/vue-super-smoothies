@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <!-- <nav class="deep-purple darken-1"> -->
-    <nav class="cyan">
+    <nav class="blue">
       <div class="container">
         <router-link :to="{ name: 'Home' }" class="brand-logo left">
           Super Smoothies
