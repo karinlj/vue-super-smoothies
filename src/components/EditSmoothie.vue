@@ -1,7 +1,11 @@
 <template>
   <!-- output om det finns något i smoothie, dvs om svar finns från db -->
   <div v-if="smoothie" class="edit-smoothie container">
-    <form @submit.prevent="editSmoothie" class="card-panel">
+    <form
+      @submit.prevent="editSmoothie"
+      class="card-panel"
+      onkeydown="return event.key != 'Enter;"
+    >
       <h2 class="center-align cyan-text">
         Edit {{ smoothie.title }}
         <!-- Edit a smoothie: {{ this.$route.params.smoothie_slug }} -->
@@ -31,12 +35,13 @@
         <input
           type="text"
           name="add-ingredient"
-          @keydown.tab.prevent="addIng"
+          @keydown.enter.prevent="addIng"
           v-model="another"
         />
       </div>
       <div class="field center-align">
         <p class="red-text" v-if="feedback">{{ feedback }}</p>
+        <button type="button" class="btn grey" @click="cancel">Cancel</button>
         <button class="btn cyan">Update smoothie</button>
       </div>
     </form>
@@ -80,14 +85,12 @@ export default {
             slug: this.smoothie.slug,
           })
           .then(() => {
-            //do something after added to db
             this.$router.push({ name: "Home" });
           });
       } else {
         this.feedback = "Please enter a smoothie title.";
       }
     },
-
     addIng() {
       if (this.another) {
         //push to empty array
@@ -105,6 +108,9 @@ export default {
           return ingredient !== ing;
         }
       );
+    },
+    cancel() {
+      this.$router.push({ name: "Home" });
     },
   },
   created() {
@@ -154,5 +160,8 @@ export default {
   font-size: 1.4rem;
   cursor: pointer;
   opacity: 0.7;
+}
+.btn {
+  margin-right: 2rem;
 }
 </style>

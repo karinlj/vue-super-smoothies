@@ -1,6 +1,10 @@
 <template>
   <div class="add-smoothie container">
-    <form @submit.prevent="addSmoothie" class="card-panel">
+    <form
+      @submit.prevent="addSmoothie"
+      class="card-panel"
+      onkeydown="return event.key != 'Enter';"
+    >
       <h2 class="center-align cyan-text">Add New Smoothie Recipe</h2>
 
       <div class="field title">
@@ -20,13 +24,14 @@
         <input
           type="text"
           name="add-ingredient"
-          @keydown.tab.prevent="addIng"
+          @keydown.enter.prevent="addIng"
           v-model="another"
         />
       </div>
       <div class="field center-align">
         <p class="red-text" v-if="feedback">{{ feedback }}</p>
-        <button class="btn cyan">Add smoothie</button>
+        <button type="button" class="btn grey" @click="cancel">Cancel</button>
+        <button type="submit" class="btn cyan">Add smoothie</button>
       </div>
     </form>
   </div>
@@ -92,6 +97,9 @@ export default {
         return ingredient !== ing;
       });
     },
+    cancel() {
+      this.$router.push({ name: "Home" });
+    },
   },
 };
 </script>
@@ -119,5 +127,8 @@ export default {
   font-size: 1.4rem;
   cursor: pointer;
   opacity: 0.7;
+}
+.btn {
+  margin-right: 2rem;
 }
 </style>
