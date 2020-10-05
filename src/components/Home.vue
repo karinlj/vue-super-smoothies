@@ -1,5 +1,5 @@
 <template>
-  <div class="home_edit container">
+  <div class="home container">
     <div class="card" v-for="smoothie in smoothies" :key="smoothie.id">
       <div class="card-content">
         <h2 class="blue-text">{{ smoothie.title }}</h2>
@@ -92,20 +92,6 @@ export default {
       }
       //console.log("user_navbar", this.user);
     });
-
-    // let userRef = db.collection("users");
-    // //comparing user_id in db with current user logged in
-
-    // userRef
-    //   .where("user_id", "==", firebase.auth().currentUser.uid)
-    //   //should only be one, but firebase does not know that
-    //   .get()
-    //   .then((snapshot) => {
-    //     snapshot.forEach((doc) => {
-    //       console.log("doc.id_navbar", doc.id);
-    //       this.profileId = doc.id; //the slug
-    //     });
-    //   });
   },
 
   //   directives: {

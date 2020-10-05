@@ -1,14 +1,11 @@
 import Vue from "vue"; //for Vue.use();
 import Router from "vue-router";
 import Home from "../components/Home";
-import HomeEdit from "../components/HomeEdit";
 import Signup from "../components/auth/Signup";
 import Login from "../components/auth/Login";
 import ViewProfile from "../components/profile/ViewProfile";
 import AddSmoothie from "../components/AddSmoothie";
 import EditSmoothie from "../components/EditSmoothie";
-// import firebase from "firebase/app";
-//import "firebase/auth";
 import firebase from "firebase";
 
 Vue.use(Router);
@@ -19,17 +16,6 @@ const router = new Router({
       path: "/",
       name: "Home",
       component: Home,
-      //   meta: {
-      //     requiresAuth: true,
-      //   },
-    },
-    {
-      path: "/home-edit",
-      name: "HomeEdit",
-      component: HomeEdit,
-      meta: {
-        requiresAuth: true,
-      },
     },
     {
       path: "/signup",
@@ -57,15 +43,6 @@ const router = new Router({
         requiresAuth: true,
       },
     },
-
-    // {
-    //   path: "/profile",
-    //   name: "ViewProfile",
-    //   component: ViewProfile,
-    //   // meta: {
-    //   //   requiresAuth: true,
-    //   // },
-    // },
     {
       path: "/profile/:id",
       name: "ViewProfile",
