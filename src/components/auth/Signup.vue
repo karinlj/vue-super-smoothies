@@ -95,18 +95,17 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .signup {
   position: relative;
   z-index: 100;
   max-width: 400px;
-  /* margin-top: 60px; */
   margin-top: 8rem;
-}
-.signup h2 {
-  font-size: 2.4rem;
-}
-.signup .field {
-  margin-bottom: 1rem;
+  h2 {
+    font-size: 2.4rem;
+  }
+  .field {
+    margin-bottom: 1rem;
+  }
 }
 </style>

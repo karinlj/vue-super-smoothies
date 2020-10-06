@@ -1,6 +1,5 @@
 <template>
   <div class="navbar">
-    <!-- <nav class="deep-purple darken-1"> -->
     <nav class="blue">
       <div class="container">
         <router-link :to="{ name: 'Home' }" class="brand-logo left">
@@ -98,12 +97,28 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .navbar {
   position: relative;
   z-index: 100;
-}
-.navbar nav {
-  padding: 0 20px;
+
+  nav {
+    height: 8rem;
+    @media all and (min-width: 576px) {
+      height: auto;
+    }
+    padding: 0 20px;
+    .brand-logo {
+      position: relative;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media all and (min-width: 576px) {
+        flex-direction: row;
+      }
+    }
+  }
 }
 </style>

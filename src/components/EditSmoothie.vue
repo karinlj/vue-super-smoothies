@@ -136,30 +136,30 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .edit-smoothie {
   position: relative;
   z-index: 1000;
   margin-top: 60px;
   padding: 20px;
   max-width: 500px;
-}
-.edit-smoothie h2 {
-  font-size: 2rem;
-  margin: 0.8rem auto;
-}
-.edit-smoothie .field {
-  margin: 0.5rem auto;
-  position: relative;
-}
-.edit-smoothie .delete {
-  position: absolute;
-  right: 0;
-  bottom: 16px;
-  color: #e91e63;
-  font-size: 1.4rem;
-  cursor: pointer;
-  opacity: 0.7;
+  h2 {
+    font-size: 2rem;
+    margin: 0.8rem auto;
+  }
+  .field {
+    margin: 0.5rem auto;
+    position: relative;
+  }
+  .delete {
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    color: #e91e63;
+    font-size: 1.4rem;
+    cursor: pointer;
+    opacity: 0.7;
+  }
 }
 .btn {
   margin-right: 2rem;

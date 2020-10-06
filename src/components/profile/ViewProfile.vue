@@ -15,19 +15,6 @@
           </div>
         </li>
       </ul>
-      <!-- <ul class="comments collection">
-        <li v-for="(comment, index) in comments" :key="index">
-          <div class="purple-text">{{ comment.from }}</div>
-          <div class="grey-text text-darken-2">{{ comment.content }}</div>
-        </li>
-      </ul> -->
-      <!-- <form @submit.prevent="addComment">
-        <div class="field">
-          <label for="comment">Add a comment</label>
-          <input type="text" name="comment" v-model="newComment" />
-          <p v-if="feedback" class="red-text center">{{ feedback }}</p>
-        </div>
-      </form> -->
     </div>
   </div>
 </template>
@@ -62,23 +49,23 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .view-profile {
   position: relative;
   z-index: 100;
   max-width: 600px;
   margin-top: 8rem;
-}
-.view-profile .card {
-  padding: 20px;
-  margin-top: 60px;
-}
-.view-profile h2 {
-  font-size: 2rem;
-  margin-top: 0;
-}
-.view-profile li {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
+  .card {
+    padding: 20px;
+    margin-top: 60px;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
 }
 </style>

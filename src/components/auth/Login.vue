@@ -60,17 +60,17 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .login {
   position: relative;
   z-index: 100;
   max-width: 400px;
   margin-top: 8rem;
-}
-.login h2 {
-  font-size: 2.4rem;
-}
-.login .field {
-  margin-bottom: 1rem;
+  h2 {
+    font-size: 2.4rem;
+  }
+  .field {
+    margin-bottom: 1rem;
+  }
 }
 </style>
