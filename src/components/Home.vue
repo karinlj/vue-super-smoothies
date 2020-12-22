@@ -6,11 +6,7 @@
       </div>
     </section>
     <section class="smoothies_section">
-      <div
-        class="card"
-        v-for="smoothie in filteredSmoothies"
-        :key="smoothie.id"
-      >
+      <div class="card" v-for="smoothie in filteredSmoothies" :key="smoothie.id">
         <div class="card-content">
           <h2 class="blue-text">{{ smoothie.title }}</h2>
           <ul class="ingredients">
@@ -18,10 +14,7 @@
               <span class="chip">{{ ing }}</span>
             </li>
           </ul>
-          <i
-            v-if="someUser"
-            class="material-icons delete"
-            @click="deleteSmoothie(smoothie.id)"
+          <i v-if="someUser" class="material-icons delete" @click="deleteSmoothie(smoothie.id)"
             >delete</i
           >
         </div>

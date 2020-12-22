@@ -2,11 +2,12 @@
 
 ## Description
 
-Application for exploring Vue.js with login, CRUD and Firebase as backend.  
+Application for exploring Vue.js with login, CRUD and Firebase as backend.
 
 ![Screenshot](/src/assets/screenshot.jpg?raw=true "Screenshot")
 
-##### Deployed at: 
+##### Deployed at:
+
 http://smoothies.boozang.com/
 
 ## Prerequisites
@@ -22,17 +23,23 @@ To clone
 ```
 npm install
 ```
+
 ## Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
+
 ## To build
-```  
-npm run build  
+
 ```
+npm run build
+```
+
 Then use the dist folder you get.
 
 ## Built With
+
 - vue.js
 - CSS
 - Materialize.css

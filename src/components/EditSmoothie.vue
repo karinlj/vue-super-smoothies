@@ -1,11 +1,7 @@
 <template>
   <!-- output om det finns något i smoothie, dvs om svar finns från db -->
   <div v-if="smoothie" class="edit-smoothie container">
-    <form
-      @submit.prevent="editSmoothie"
-      class="card-panel"
-      onkeydown="return event.key != 'Enter;"
-    >
+    <form @submit.prevent="editSmoothie" class="card-panel" onkeydown="return event.key != 'Enter;">
       <h2 class="center-align blue-text">
         Edit {{ smoothie.title }}
         <!-- Edit a smoothie: {{ this.$route.params.smoothie_slug }} -->
@@ -15,18 +11,10 @@
         <input type="text" name="title" v-model="smoothie.title" />
       </div>
       <!-- outputting editable ingredients with input-element-->
-      <div
-        class="field"
-        v-for="(ing, index) in smoothie.ingredients"
-        :key="index"
-      >
+      <div class="field" v-for="(ing, index) in smoothie.ingredients" :key="index">
         <label for="ing">Ingredient: </label>
         <!-- must bind to something in data(): ingredients -->
-        <input
-          type="text"
-          name="ingredient"
-          v-model="smoothie.ingredients[index]"
-        />
+        <input type="text" name="ingredient" v-model="smoothie.ingredients[index]" />
         <i class="material-icons delete" @click="deleteIng(ing)">delete</i>
       </div>
       <!-- add-ingredient -->
@@ -93,7 +81,7 @@ export default {
     },
     addIng() {
       if (this.another) {
-        //push to empty array
+        //push a string to empty array
         this.smoothie.ingredients.push(this.another);
         this.another = null;
         this.feedback = null;
@@ -103,11 +91,9 @@ export default {
     },
     //deleting ing
     deleteIng(ing) {
-      this.smoothie.ingredients = this.smoothie.ingredients.filter(
-        (ingredient) => {
-          return ingredient !== ing;
-        }
-      );
+      this.smoothie.ingredients = this.smoothie.ingredients.filter((ingredient) => {
+        return ingredient !== ing;
+      });
     },
     cancel() {
       this.$router.push({ name: "Home" });
@@ -125,7 +111,7 @@ export default {
     ref.get().then((snapshot) => {
       snapshot.forEach((doc) => {
         this.smoothie = doc.data();
-        //this id is not in the data(), but in the doc
+        //id is not in the data(), but in the doc
         //här får vi this.smoothie.id till editSmoothie() ovan
         this.smoothie.id = doc.id;
         //console.log("doc.id", doc.id);
