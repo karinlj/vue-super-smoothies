@@ -6,10 +6,6 @@ Application for exploring Vue.js with login, CRUD and Firebase as backend.
 
 ![Screenshot](/src/assets/screenshot.jpg?raw=true "Screenshot")
 
-##### Deployed at:
-
-http://smoothies.boozang.com/
-
 ## Prerequisites
 
 NodeJS
